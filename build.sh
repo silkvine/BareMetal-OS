@@ -26,7 +26,7 @@ function build_dir {
 		./build.sh
 	fi
 	if [ -e "install.sh" ]; then
-		./install.sh
+		./install.sh --prefix ${PREFIX}
 	fi
 	cd "../.."
 }
