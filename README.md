@@ -1,3 +1,5 @@
+# This project has been archived and marked as read-only. The BareMetal OS repo is now hosted on [GitLab](https://gitlab.com/ReturnInfinity/BareMetal-OS).
+
 BareMetal OS build scripts
 ==========================
 
@@ -5,6 +7,7 @@ The easiest way to create a BareMetal OS build environment. These scripts will d
 
 [![Join the chat at https://gitter.im/ReturnInfinity/BareMetal-OS](https://badges.gitter.im/ReturnInfinity/BareMetal-OS.svg)](https://gitter.im/ReturnInfinity/BareMetal-OS?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/ReturnInfinity/BareMetal-OS.svg?branch=master)](https://travis-ci.org/ReturnInfinity/BareMetal-OS)
+
 
 Prerequisites
 -------------
@@ -18,6 +21,8 @@ In Ubuntu this can be completed with the following command:
 There are additional dependencies if you are planning on compiling Newlib. They can be installed with the following command:
 
 	sudo apt-get install autoconf automake libtool sed gawk bison flex m4 texinfo texi2html unzip make
+
+If you want to build programs written in D you also need the ldc2 compiler.
 
 
 Initial configuration
@@ -61,6 +66,11 @@ Build a VMDK disk image for VMware
 
 	./vmdk.sh
 
+
+Build a VHD disk image for VirtualMachines
+------------------------------------------
+
+        ./vhd.sh
 
 Build a VDI disk image for VirtualBox
 -------------------------------------
